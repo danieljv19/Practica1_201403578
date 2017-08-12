@@ -1,21 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package practica1_201403578;
 
-/**
- *
- * @author usuario
- */
+package practica1_201403578;
+import java.util.Scanner;
 public class Practica1_201403578 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int opcion=0;
+        Scanner s = new Scanner(System.in);
+        boolean salir=true;
+        
+        System.out.println("            Daniel Alejandro Jiménez Vásquez            ");
+        System.out.println("                        201403578                       ");
+        System.out.println("                    IPC1 A Practica 1                   ");
+        System.out.println("                        BUSCAMINAS!!                    ");
+        
+        while(salir){
+        System.out.println("Escoge el nivel!!");
+        System.out.println("1. Principiante");
+        System.out.println("2. Intermedio");
+        System.out.println("3. Experto");
+        System.out.println("4. Salir");
+        opcion=s.nextInt();
+        
+        switch(opcion){
+            case 1:{
+                
+            }break;
+            
+            case 2:{
+                
+            }break;
+            
+            case 3:{
+                
+            }break;
+            
+            case 4:{
+                salir=false;
+            }break;
+            default: System.out.println("Esa opción no existe");
+        }
+        
+    }
     }
     
 }
