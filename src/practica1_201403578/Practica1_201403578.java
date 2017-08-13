@@ -25,9 +25,19 @@ public class Practica1_201403578 {
         switch(opcion){
             case 1:{
                 
+                System.out.println("Bienvenido al nivel principiante");
+                
+                principiante_201403578 men=new principiante_201403578();
+                men.MenuPrincipiante();
+                
             }break;
             
             case 2:{
+                
+                System.out.println("Bienvenido al nivel intermedio!!");
+                
+                intermedio_201403578 intermedio = new intermedio_201403578();
+                intermedio.MenuIntermedio();
                 
             }break;
             
