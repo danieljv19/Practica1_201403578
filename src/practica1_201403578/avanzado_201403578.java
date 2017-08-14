@@ -48,5 +48,16 @@ public class avanzado_201403578 {
         }
 
     }
+    
+    public void RecorrerMatrizAvanzada(){
+        
+        for (int i = 0; i < matriz_avanzado.length; i++) {
+            
+            for (int j = 0; j < matriz_avanzado.length; j++) {
+                
+            }
+            
+        }
+    }
 
 }
