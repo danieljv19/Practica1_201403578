@@ -15,12 +15,14 @@ public class intermedio_201403578 {
     private int fila, columna;
     private TableroDeJuegoIntermedio_201403578 nuevo = new TableroDeJuegoIntermedio_201403578();
 
+
     public intermedio_201403578() {
 
         fila = 4;
         columna = 4;
         matriz_intermedio = new String[fila][columna];
         elegido = new boolean[fila][columna];
+
 
     }
 
@@ -46,21 +48,21 @@ public class intermedio_201403578 {
 
                 case 'V': {
 
-                    System.out.println("Fila: ");
+                    System.out.println("Ingresa fila: ");
                     fila = inter.nextInt();
-                    System.out.println("Columna:");
+                    System.out.println("Ingresa columna:");
                     columna = inter.nextInt();
-                    System.out.println("El casillero elegido es: casillero[" + fila + "][" + columna + "]");
+                    System.out.println("La posición elegida es: " + fila + ", "+columna);
                     if (nuevo.voltearCasillero(fila, columna)) {
                         nuevo.mostrarTablero();
                         aciertos++;
                         System.out.println("aciertos: " + aciertos);
                         if (aciertos == objetivo_intermedio) {
-                            System.out.println("GANASTE!!");
+                            System.out.println("Felicidades Ganaste!!");
                             salir = true;
                         }
                     } else {
-                        System.out.println("PERDISTE!!");
+                        System.out.println("Lástima Perdiste!!");
                         salir = true;
                     }
                 }
@@ -68,6 +70,8 @@ public class intermedio_201403578 {
 
                 case 'R': {
 
+                    nuevo.mostrarTablero();
+                    
                 }
                 break;
 
